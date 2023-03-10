@@ -20,7 +20,7 @@ import PostForm from "../dashboardscreens/postform";
 import Messenger from "../dashboardscreens/messenger"
 import Notification from "../dashboardscreens/notification"
 import Feedback from "../dashboardscreens/feedback"
-const drawerWidth = 220;
+const drawerWidth = 160;
 
 export default function MainLayout() {
   const [menuList, setMenuList] = React.useState([
@@ -62,7 +62,7 @@ export default function MainLayout() {
         sx={{ width: `calc(100% - ${drawerWidth}px)`, ml: `${drawerWidth}px` }}
       >
         <Toolbar>
-          <Typography variant="h6" noWrap component="div">
+          <Typography variant="h5" noWrap component="div">
           Dashboard
           </Typography>
         </Toolbar>
@@ -100,7 +100,7 @@ export default function MainLayout() {
       </Drawer>
       <Box
         component="main"
-        sx={{ flexGrow: 1, bgcolor: "background.default", p: 3 }}
+        sx={{ flexGrow: 1, bgcolor: "background.default", p: 2 }}
       >
         <Toolbar />
         <Routes>
