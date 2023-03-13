@@ -1,12 +1,12 @@
 import './App.css';
 import "../node_modules/bootstrap/dist/css/bootstrap.min.css"
-import AppRouter from './config/router';
+import AppRouter from './config/browserrouter';
 
 function App() {
   return (
-    <div className="bg-light">
-    <AppRouter />
-  </div>
+    <>
+    <AppRouter/>
+</>
   );
 }
 
